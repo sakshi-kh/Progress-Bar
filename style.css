@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgray;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bar {
+  width: 160px;
+  height: 160px;
+  /* background: blueviolet; */
+  position: relative;
+}
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px white, -6px -6px 10px -1px white;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px white, inset -4px -4px 6px -1px white,
+    -0.5px -0.5px 0px white, 0.5px 0.5px 0px white, 0px 12px 10px -10px white;
+}
+#num {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #555;
+}
+circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: progress 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes progress {
+    100%{
+        stroke-dashoffset:118;
+    }
+}
